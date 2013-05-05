@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="50dip"
+    android:orientation="vertical">
+    
+      <ListView
+          android:id="@android:id/list"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" >
+
+      </ListView>
+   
+      <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="166dp"
+        android:orientation="vertical" >
+        </RelativeLayout>
+        
+      <LinearLayout
+        android:id="@+id/undobar"
+        style="@style/UndoBar" >
+
+        <TextView
+            android:id="@+id/undobar_message"
+            style="@style/UndoBarMessage"
+            android:textIsSelectable="false" />
+
+        <Button
+            android:id="@+id/undobar_button"
+            style="@style/UndoBarButton" />
+    </LinearLayout>
+</LinearLayout>
+

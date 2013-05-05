@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent" 
+    android:id="@+id/widget38">
+
+                    <Button
+                        android:id="@+id/snooze_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_x="121dp"
+                        android:layout_y="313dp"
+                        android:text="@string/snooze_button_caption" />
+
+                    <RadioButton
+                        android:id="@+id/SnoozeMin1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_x="98dp"
+                        android:layout_y="66dp"
+                        android:text="@string/snooze_option1" />
+
+                    <RadioButton
+                        android:id="@+id/SnoozeMin2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_x="100dp"
+                        android:layout_y="120dp"
+                        android:text="@string/snooze_option2" />
+
+                    <RadioButton
+                        android:id="@+id/SnoozeMin5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_x="98dp"
+                        android:layout_y="171dp"
+                        android:text="@string/snooze_option3" />
+
+                    <RadioButton
+                        android:id="@+id/SnoozeMin10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_x="94dp"
+                        android:layout_y="231dp"
+                        android:text="@string/snooze_option4" />
+                         
+                          </AbsoluteLayout>

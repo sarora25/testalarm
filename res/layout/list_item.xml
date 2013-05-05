@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/list_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="Description and stuff"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/alarm_repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="false" />
+   
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:paddingTop="5.0dip" >
+
+        <EditText
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Label" >
+
+            <requestFocus />
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/edit_repeat_chk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/label"
+            android:text="@string/_repeat" />
+
+        <LinearLayout
+            android:id="@+id/edit_repeat_buttons"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_repeat_chk"
+            android:orientation="horizontal"
+            android:paddingBottom="1.0dip"
+            android:paddingTop="5.0dip"
+            android:weightSum="7" >
+
+            <ToggleButton
+                android:id="@+id/edit_sun_tgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:enabled="false"
+                android:minWidth="40dp"
+                android:textOff="@string/_sun"
+                android:textOn="@string/_sun"
+                android:textSize="10sp" />
+
+            <ToggleButton
+                android:id="@+id/edit_mon_tgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:enabled="false"
+                android:minWidth="40dp"
+                android:textOff="@string/_mon"
+                android:textOn="@string/_mon"
+                android:textSize="10sp" />
+
+            <ToggleButton
+                android:id="@+id/edit_tue_tgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:enabled="false"
+                android:minWidth="40dp"
+                android:textOff="@string/_tue"
+                android:textOn="@string/_tue"
+                android:textSize="10sp" />
+
+            <ToggleButton
+                android:id="@+id/edit_wed_tgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:enabled="false"
+                android:minWidth="40dp"
+                android:textOff="@string/_wed"
+                android:textOn="@string/_wed"
+                android:textSize="10sp" />
+
+            <ToggleButton
+                android:id="@+id/edit_thu_tgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:enabled="false"
+                android:minWidth="40dp"
+                android:textOff="@string/_thu"
+                android:textOn="@string/_thu"
+                android:textSize="10sp" />
+
+            <ToggleButton
+                android:id="@+id/edit_fri_tgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:enabled="false"
+                android:minWidth="40dp"
+                android:textOff="@string/_fri"
+                android:textOn="@string/_fri"
+                android:textSize="10sp" />
+
+            <ToggleButton
+                android:id="@+id/edit_sat_tgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:enabled="false"
+                android:minWidth="40dp"
+                android:textOff="@string/_sat"
+                android:textOn="@string/_sat"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/edit_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/label"
+            android:layout_toRightOf="@+id/label"
+            android:text="Enable" />
+    </RelativeLayout>
+   
+</LinearLayout>
